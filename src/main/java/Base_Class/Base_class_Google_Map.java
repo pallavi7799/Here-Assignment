@@ -32,9 +32,5 @@ public class Base_class_Google_Map {
 		FileHandler.copy(src, dest);
     }
 	    
-	    public void Scroll(int X, int Y)
-	    {
-	    	JavascriptExecutor p = ((JavascriptExecutor)driver);
-	    	p.executeScript("window.scrollBy(X,Y)");
-	    }
+	    
 }

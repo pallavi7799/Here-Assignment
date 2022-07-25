@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_classes.Google_Map">
+      <class name="Test_classes.Redbus_Test_Class">
         <methods>
-          <include name="openBrowser"/>
-          <include name="PrintReview_And_Ratings"/>
-          <include name="verifyText"/>
-          <include name="VerifyLinkPresense"/>
+          <include name="CaptureAllBusDetails"/>
+          <include name="LaunchBrowser"/>
         </methods>
-      </class> <!-- Test_classes.Google_Map -->
+      </class> <!-- Test_classes.Redbus_Test_Class -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

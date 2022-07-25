@@ -15,7 +15,8 @@ public class Google_map_Home_page {
 	@FindBy(xpath = "(//div[@class='LBgpqf']//span[@aria-hidden='true'])[1]") private WebElement ratings;
 	@FindBy(xpath = "(//button[@class='DkEaL'])[1]")private WebElement reviews;
 	@FindBy(xpath = "(//div[@class='rogA2c ITvuef'])") private WebElement Link;
-	
+	@FindBy(xpath = "(//div[@class='Io6YTe fontBodyMedium'])[1]") private WebElement Address;
+	@FindBy(xpath = "(//div[@class='Io6YTe fontBodyMedium'])[3]")private WebElement PhoneNumber;
 	public Google_map_Home_page(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
@@ -52,6 +53,16 @@ public class Google_map_Home_page {
 	{
 		 WebElement ActualLink = Link;
 		return ActualLink;
+	}
+	
+	public String print_address()
+	{
+		return Address.getText();
+	}
+	
+	public String verifyNumber()
+	{
+		return PhoneNumber.getText();
 	}
 
 	
